@@ -81,12 +81,12 @@
         };
 
         raise_layer {
-            display-name = "symbol";
+            display-name = "SYMBOL";
             bindings = <
 &kp GRAVE  &kp NUMBER_1         &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                                     &mmv MOVE_UP                     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BSPC
 &trans     &kp LS(EXCLAMATION)  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp MINUS     &kp EQUAL     &kp LBKT      &kp RBKT      &kp BSLH      &kp SINGLE_QUOTE
-&trans     &kp CARET            &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &mmv MOVE_DOWN                   &kp UNDER     &kp PLUS      &kp COMMA     &kp DOT       &kp PIPE      &trans
-                                               &trans        &trans                &trans                                                                            &trans        &trans        &trans
+&trans     &kp CARET            &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &mmv MOVE_DOWN                   &kp UNDER     &kp PLUS      &kp LBRC      &kp RBRC      &kp PIPE      &trans
+                                               &trans        &trans                &to 0                                                                             &trans        &trans        &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
@@ -106,10 +106,10 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                                &mmv MOVE_UP                     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
-&trans  &trans  &trans  &trans  &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                        &trans  &trans  &trans                                                                 &trans  &trans  &trans
+&trans  &kp F1                         &kp F2          &kp F3           &kp F4  &kp F5                                &mmv MOVE_UP                     &kp F6  &kp F7  &kp F8  &kp F9  &kp F10          &kp F11
+&trans  &trans                         &trans          &trans           &trans  &trans                &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &trans  &trans  &trans  &trans  &kp PRINTSCREEN  &kp F12
+&trans  &rgb_ug RGB_COLOR_HSB(0,0,83)  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans  &trans  &kp C_MUTE                    &mmv MOVE_DOWN                   &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                                       &trans           &trans  &trans                                                                 &trans  &trans  &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
