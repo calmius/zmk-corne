@@ -18,13 +18,13 @@ layers:
   - A
   - S
   - D
-  - {t: F, h: symbol}
+  - {t: F, h: SYMBOL}
   - G
   - $$mdi:arrow-left-bold$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:arrow-right-bold$$
   - H
-  - {t: J, h: symbol}
+  - {t: J, h: SYMBOL}
   - K
   - L
   - {t: ;, s: ':'}
@@ -49,7 +49,7 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
-  symbol:
+  SYMBOL:
   - {t: '`', s: '~'}
   - '1'
   - '2'
@@ -88,13 +88,13 @@ layers:
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
   - _
   - +
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - '{'
+  - '}'
   - '|'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: type, h: toggle}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,9 +177,9 @@ layers:
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - RGB COLOR HSB(0,0,83)
+  - RGB ON
+  - RGB OFF
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:volume-off$$
@@ -249,4 +249,4 @@ combos:
 - p: [1, 15, 29]
   k: '&soft_off'
 - p: [17, 23]
-  k: {t: symbol, h: toggle}
+  k: {t: SYMBOL, h: toggle}
