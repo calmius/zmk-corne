@@ -73,7 +73,7 @@ layers:
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
   - {t: '[', s: '{'}
-  - {t: Gui+-, s: Gui+_, type: held alternate}
+  - {t: '-', s: _, type: held alternate}
   - {t: '=', s: +}
   - KP PLUS
   - '|'
