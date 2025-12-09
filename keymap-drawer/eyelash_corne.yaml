@@ -110,6 +110,7 @@ layers:
   - Ctl+$$mdi:arrow-left-bold$$
   - $$mdi:arrow-up-bold$$
   - Ctl+$$mdi:arrow-right-bold$$
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -120,12 +121,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - HOME
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:transfer$$', type: trans}
+  - END
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:transfer$$', type: trans}
