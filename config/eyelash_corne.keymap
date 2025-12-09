@@ -94,8 +94,8 @@
             bindings = <
 &trans        &trans  &trans  &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans                    &trans          &trans  &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &trans  &trans
 &trans        &trans  &trans  &trans             &trans          &trans            &trans  &trans  &trans  &trans  &kp LEFT      &kp DOWN      &kp RIGHT      &trans  &trans
-&kp LEFT_GUI  &to 3   &trans  &trans             &trans          &trans  &trans            &trans          &trans  &trans        &trans        &trans         &trans  &trans
-                              &trans             &kp SPACE       &to 0                                     &trans  &trans        &trans
+&kp LEFT_GUI  &trans  &trans  &trans             &trans          &trans  &trans            &trans          &trans  &trans        &trans        &trans         &trans  &trans
+                              &trans             &kp SPACE       &to 0                                     &to 3   &trans        &trans
             >;
 
             label = "move";
