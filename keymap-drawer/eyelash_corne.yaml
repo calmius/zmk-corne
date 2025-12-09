@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
@@ -78,7 +78,7 @@ layers:
   - KP PLUS
   - '|'
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - ^
   - '&'
   - '*'
@@ -127,7 +127,7 @@ layers:
   - $$mdi:arrow-right-bold$$
   - END
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:apple-keyboard-command$$
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -177,7 +177,7 @@ layers:
   - PRINTSCREEN
   - F12
   - {t: '$$mdi:transfer$$', type: trans}
-  - RGB COLOR HSB(0,0,83)
+  - RGB COLOR HSB(0,0,59)
   - RGB ON
   - RGB OFF
   - {t: '$$mdi:transfer$$', type: trans}
