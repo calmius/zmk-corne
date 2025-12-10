@@ -109,6 +109,8 @@
 &trans  &rgb_ug RGB_COLOR_HSB(0,0,59)  &rgb_ug RGB_ON  &rgb_ug RGB_OFF  &trans  &trans  &trans            &bt BT_SEL 1          &trans  &trans  &trans  &trans  &kp SCROLLLOCK   &kp PAUSE_BREAK
                                                        &trans           &trans  &to 0                                           &trans  &trans  &trans
             >;
+
+            sensor-bindings = <&rgb_encoder>;
         };
 
         lower_layer {
