@@ -86,7 +86,7 @@
 &kp GRAVE  &kp NUMBER_1         &kp NUMBER_2   &kp NUMBER_3  &kp NUMBER_4          &kp NUMBER_5                                     &mmv MOVE_UP                     &kp NUMBER_6       &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BSPC
 &trans     &kp LS(EXCLAMATION)  &kp AT         &kp HASH      &kp DOLLAR            &kp PERCENT                      &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT_BRACKET   &kp MINUS       &kp EQUAL     &kp KP_PLUS   &kp PIPE      &kp SINGLE_QUOTE
 &trans     &kp CARET            &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans                    &mmv MOVE_DOWN                   &kp RIGHT_BRACKET  &kp UNDERSCORE  &kp COMMA     &kp DOT       &kp SLASH     &kp BACKSLASH
-                                               &trans        &trans                &to 0                                                                             &trans             &trans          &trans
+                                               &trans        &trans                &to 0                                                                             &kp RIGHT_ALT      &trans          &trans
             >;
         };
 
