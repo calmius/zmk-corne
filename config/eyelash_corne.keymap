@@ -92,13 +92,14 @@
 
         movement {
             bindings = <
-&trans  &trans  &trans  &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans                    &trans          &trans    &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp DELETE  &trans
-&trans  &trans  &trans  &trans             &trans          &trans            &trans  &trans  &trans  &kp HOME  &kp LEFT      &kp DOWN      &kp RIGHT      &kp END     &trans
-&trans  &trans  &trans  &trans             &trans          &trans  &trans            &trans          &trans    &trans        &trans        &trans         &trans      &trans
-                        &trans             &kp SPACE       &to 0                                     &to 3     &trans        &trans
+&trans  &trans  &trans  &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans                    &trans          &trans        &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp DELETE  &trans
+&trans  &trans  &trans  &trans             &trans          &trans            &trans  &trans  &trans  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END     &trans
+&trans  &trans  &trans  &trans             &trans          &trans  &trans            &trans          &trans        &trans        &trans        &trans         &trans      &to 3
+                        &trans             &trans          &to 0                                     &kp LEFT_ALT  &trans        &trans
             >;
 
             label = "move";
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         layer_3 {
