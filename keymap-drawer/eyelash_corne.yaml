@@ -4,41 +4,41 @@ layers:
   - $$mdi:keyboard-tab$$
   - Q
   - W
-  - E
-  - R
-  - T
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
-  - Y
-  - U
-  - I
-  - O
+  - F
   - P
+  - B
+  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - J
+  - L
+  - U
+  - Y
+  - {t: ;, s: ':'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
   - A
+  - R
   - S
-  - D
-  - {t: F, h: SYMBOL}
+  - {t: T, h: SYMBOL}
   - G
   - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
   - $$mdi:mouse-left-click-outline$$
   - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
-  - H
-  - {t: J, h: SYMBOL}
-  - K
-  - L
-  - {t: ;, s: ':'}
+  - M
+  - {t: N, h: SYMBOL}
+  - E
+  - I
+  - O
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-command$$
   - Z
   - X
   - C
+  - D
   - V
-  - B
   - $$mdi:volume-off$$
   - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
-  - N
-  - M
+  - K
+  - H
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
@@ -49,6 +49,55 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:apple-keyboard-control$$
+  ru:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Y
+  - I
+  - I
+  - O
+  - P
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
+  - .
+  - {t: '$$mdi:transfer$$', type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   SYMBOL:
   - {t: '`', s: '~'}
   - '1'
@@ -246,7 +295,7 @@ layers:
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
 - p: [17, 23]
   k: {t: SYMBOL, h: toggle}
+- p: [43, 28]
+  k: {t: ru, h: toggle}
