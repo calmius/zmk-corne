@@ -48,36 +48,46 @@
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
-        tap-ms = <100>;
+        tap-ms = <50>;
+        label = "sound";
     };
 
     combos {
         compatible = "zmk,combos";
 
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <1 15 29>;
+        l1 {
+            bindings = <&to 2>;
+            key-positions = <17 23>;
         };
 
-        l1 {
+        lan-switch {
             bindings = <&to 1>;
-            key-positions = <17 23>;
+            key-positions = <43 28>;
         };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        eng {
             display-name = "type";
             bindings = <
-&kp TAB       &kp Q  &kp W  &kp E           &kp R      &kp T                                 &mmv MOVE_UP                     &kp Y         &kp U      &kp I              &kp O    &kp P     &kp BSPC
-&kp CAPSLOCK  &kp A  &kp S  &kp D           &lt 1 F    &kp G                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp H         &lt 1 J    &kp K              &kp L    &kp SEMI  &kp SQT
-&kp LEFT_GUI  &kp Z  &kp X  &kp C           &kp V      &kp B   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp N         &kp M      &kp COMMA          &kp DOT  &kp FSLH  &trans
-                            &kp LEFT_SHIFT  &kp SPACE  &tog 2                                                                 &kp LEFT_ALT  &kp ENTER  &kp RIGHT_CONTROL
+&kp TAB       &kp Q  &kp W  &kp F           &kp P      &kp B                                 &mmv MOVE_UP                     &kp J         &kp L      &kp U              &kp Y    &kp SEMICOLON  &kp BSPC
+&kp CAPSLOCK  &kp A  &kp R  &kp S           &lt 2 T    &kp G                 &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp M         &lt 2 N    &kp E              &kp I    &kp O          &kp SQT
+&kp LEFT_GUI  &kp Z  &kp X  &kp C           &kp D      &kp V   &kp C_MUTE                    &mmv MOVE_DOWN                   &kp K         &kp H      &kp COMMA          &kp DOT  &kp FSLH       &trans
+                            &kp LEFT_SHIFT  &kp SPACE  &tog 3                                                                 &kp LEFT_ALT  &kp ENTER  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+        };
+
+        ru {
+            bindings = <
+&trans  &kp Q  &kp W  &kp E   &kp R   &kp T                     &trans          &kp Y   &kp I   &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D   &kp F   &kp G             &trans  &trans  &trans  &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
+&trans  &kp Z  &kp X  &kp C   &kp V   &kp B   &trans            &trans          &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
 
         raise_layer {
@@ -94,7 +104,7 @@
             bindings = <
 &trans  &trans  &trans  &kp LC(BACKSPACE)  &kp LC(DELETE)  &trans                    &trans          &trans        &kp LC(LEFT)  &kp UP_ARROW  &kp LC(RIGHT)  &kp DELETE  &trans
 &trans  &trans  &trans  &trans             &trans          &trans            &trans  &trans  &trans  &kp HOME      &kp LEFT      &kp DOWN      &kp RIGHT      &kp END     &trans
-&trans  &trans  &trans  &trans             &trans          &trans  &trans            &trans          &trans        &trans        &trans        &trans         &trans      &to 3
+&trans  &trans  &trans  &trans             &trans          &trans  &trans            &trans          &trans        &trans        &trans        &trans         &trans      &to 4
                         &trans             &trans          &to 0                                     &kp LEFT_ALT  &trans        &trans
             >;
 
